@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 10px;
   }
   
   html {
@@ -9,22 +10,28 @@
   }
   
   body {
-    background: #e0e0e0;
+    background: cadetblue;
   }
   
   main {
-    width: 1020px;
+    max-width: 102rem;
     margin: auto;
+    
   }
-  
+
+  .title {
+    color: cornsilk;
+    font-size: 2rem;
+  }
+
   .keyboard {
     display: grid;
-    grid-row-gap: 10px;
-    padding: 10px;
+    grid-row-gap: 1rem;
+    padding: 1rem;
     border: 1px solid;
     position: relative;
     overflow: hidden;
-    background: #2c2c2c;
+    background: #034e8b;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -35,9 +42,9 @@
   
   .keyboard__row {
     display: grid;
-    grid-gap: 10px;
-    grid-row-gap: 10px;
-    height: 50px;
+    grid-gap: 1rem;
+    grid-row-gap: 1rem;
+    height: 5rem;
   }
   
   .keyboard__key {
@@ -81,60 +88,60 @@
   }
   
   [data-fn="true"] > .letter {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   
   [data-code="CapsLock"] {
-    width: 86px;
+    width: 8.6rem;
   }
   
   [data-code="ShiftLeft"] {
-    width: 100px;
+    width: 10rem;
   }
   
   [data-code="ShiftRight"] {
-    width: 120px;
+    width: 12rem;
   }
   
   [data-code="Enter"] {
-    width: 100px;
+    width: 10rem;
   }
   
   [data-code="Tab"] {
-    width: 76px;
+    width: 7.6rem;
   }
   
   [data-code="ControlLeft"] {
-    width: 76px;
+    width: 7.6rem;
   }
   
   [data-code="ControlRight"] {
-    width: 60px;
+    width: 6rem;
   }
   
   [data-code="Backspace"] {
-    width: 115px;
+    width: 11.5rem;
   }
   
   [data-code="Space"] {
-    width: 420px;
+    width: 42rem;
   }
   
   [data-code="AltLeft"],
   [data-code="AltRight"] {
-    width: 76px;
+    width: 7.6rem;
   }
   
   [data-code="ArrowLeft"],
   [data-code="ArrowUp"],
   [data-code="ArrowDown"],
   [data-code="ArrowRight"] {
-    background: rgb(125, 253, 75);
+    background: rgb(87, 195, 245);
   }
   
   
   .active {
-    background: rgb(60, 212, 0);
+    background: rgb(87, 195, 245);
   }
   
   .letter {
@@ -155,26 +162,27 @@
   }
   
   .subtitle, .hint {
-    color: #666;
+    color: gainsboro;
+    font-size: 1rem;
   }
   
   textarea.output {
     resize: none;
     width: 100%;
-    height: 200px;
-    padding: 10px;
+    height: 20rem;
+    padding: 1rem;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 1px;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
   
   .sub {
     width: 100%;
     color: #68688a;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 1rem;
     transition: all .2s ease;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -184,14 +192,14 @@
   
   .sub.sub-active:not(:empty) {
     color: rgb(19, 80, 0);
-    font-size: 23px;
+    font-size: 2.3rem;
   }
   
   .sub.sub-active:not(:empty) ~ .letter.sub-inactive {
     color: #68688a;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
-    padding-right: 10px;
+    padding-right: 1rem;
     width: 50%;
     transform-origin: center;
     transform: translateX(20px);
